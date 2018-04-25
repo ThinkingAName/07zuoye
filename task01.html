@@ -1,0 +1,106 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+<head>
+    <meta charset="utf-8">      <!--字符编码为国际编码-->
+    <meta name="Author" content="40期风屿JS——不懂就问">    <!--网页创建者-->
+    <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+    <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+    <title>第7次课后作业-01</title>   <!--网页标题-->
+    <!--
+          <link rel="stylesheet" type="text/css" href="css/common.css">
+          <link rel="stylesheet" type="text/css" href="css/index.css">
+          <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+          <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+          -->
+    <style>
+        body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6{ margin:0;}
+        ul,ol{ padding-left:0;list-style:none;}
+        table{ border-collapse:collapse; }
+        th, td{ padding: 0; }
+        em,i{ font-style:normal;/*设置字体样式：正常显示（就是不倾斜）*/}
+        strong,b{ font-weight:normal;/*设置字体加粗：正常显示（就是不加粗）*/}
+        a{ text-decoration:none;/*去掉下划线*/}
+        div{
+            border-bottom: 2px solid #62a545;
+        }
+        div p{
+            display: inline-block;
+            width:80px;
+            height: 30px;
+            border: 1px solid deepskyblue;
+            margin: 2px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mult1">
+    </div>
+    <div id="mult2">
+    </div>
+    <div id="mult3">
+    </div>
+    <div id="mult4">
+    </div>
+
+<script>
+    var mult1 = document.getElementById("mult1"),
+        mult2 = document.getElementById("mult2"),
+        mult3 = document.getElementById("mult3"),
+        mult4 = document.getElementById("mult4"),
+        arrColor16 = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'],
+        color16;
+    var i,
+        j;
+    function roundColor16() {
+        var str = '#',
+            n;
+        for ( var n = 0; n < 6; n++ ){
+            var  x = Math.floor(Math.random()*16),
+                str = str.concat(arrColor16[x].toString());
+                //str += arrColor16[x].toString();
+                console.log(arrColor16[x]);
+                console.log(typeof arrColor16[x]);
+                console.log(str);
+        }
+        return str;
+    };
+    for (i = 1;i <= 9;i++) {
+        for (j = 1;j <= i;j++) {
+            color16 = roundColor16();
+            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
+            console.log(str);
+            mult1.innerHTML += str;
+        };
+        mult1.innerHTML += '<br>';
+    }
+    for (i = 9;i >= 1;i--) {
+        for (j = 1;j <= i;j++) {
+            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            console.log(str);
+            mult2.innerHTML += str;
+        };
+        mult2.innerHTML += '<br>';
+    };
+    for (i = 1;i <= 9;i++) {
+        for (j = i;j >= 1;j--) {
+            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            console.log(str);
+            mult3.innerHTML += str;
+        };
+        mult3.innerHTML += '<br>';
+    };
+    for (i = 9;i >= 1;i--) {
+        for (j = i;j >= 1;j--) {
+            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            console.log(str);
+            mult4.innerHTML += str;
+        };
+        mult4.innerHTML += '<br>';
+    }
+
+</script>
+</body>
+</html>
