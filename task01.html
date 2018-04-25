@@ -67,7 +67,23 @@
         }
         return str;
     };
-    color16 = roundColor16();
+    function roundColorRGB(A) {
+        var  r = Math.floor(Math.random()*256),
+             g = Math.floor(Math.random()*256),
+             b = Math.floor(Math.random()*256),
+             a = Math.random().toFixed(1)*1,
+             str = "";
+        if(A){
+            str = "rgba("+r+','+g+','+b+','+a+")";
+            console.log(str);
+        }else
+            str = "rgb("+r+','+g+','+b+")";
+
+        return str
+
+    }
+    // color16 = roundColor16();
+    color16 = roundColorRGB(1);
     for (i = 1;i <= 9;i++) {
         for (j = 1;j <= i;j++) {
             var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';

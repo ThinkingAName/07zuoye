@@ -1,0 +1,133 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+ <head>
+  <meta charset="utf-8">      <!--字符编码为国际编码-->
+  <meta name="Author" content="JS40期风屿——不懂就问">    <!--网页创建者-->
+  <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+  <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+  <title>第2次课后作业</title>   <!--网页标题-->  
+  <style>
+	body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6{ margin:0;}
+	ul,ol{ padding-left:0;list-style:none;}
+	table{ border-collapse:collapse; }
+	th, td{ padding: 0; }
+	em,i{ font-style:normal;/*设置字体样式：正常显示（就是不倾斜）*/}
+	strong,b{ font-weight:normal;/*设置字体加粗：正常显示（就是不加粗）*/}
+	a{ text-decoration:none;/*去掉下划线*/}
+
+      div,li{
+            width:100px;
+            border: 1px solid blue;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+
+      }
+      li{
+          height: 32px;
+          background-color: white;
+      }
+      div{
+          background-color: lightpink;
+      }
+      .select{
+          display: none;
+      }
+      .show{
+          display: block;
+      }
+  </style>
+     <!--
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+      -->
+</head>
+<body>
+
+        <div class="select1">000000
+            <ul class="select">
+                <li>111111</li>
+                <li>333333</li>
+                <li>222222</li>
+            </ul>
+        </div>
+        <div class="select2">AAAAAA
+            <ul class="select" >
+                <li>ssssss</li>
+                <li>dddddd</li>
+                <li>rrrrrr</li>
+                <li>tttttt</li>
+            </ul>
+        </div>
+        <div class="select3">@@@@@@
+            <ul class="select">
+                <li>!!!!!!</li>
+                <li>!!!!!!</li>
+                <li>!!!!!!</li>
+            </ul>
+        </div>
+        <div class="select4">最后的选项
+            <ul class="select">
+                <li>最后的选项1</li>
+                <li>最后的选项2</li>
+                <li>最后的选项3</li>
+                <li>最后的选项4</li>
+                <li>最后的选项5</li>
+                <li>最后的选项6</li>
+            </ul>
+        </div>
+        <div class="select5">￥￥￥￥￥￥
+            <ul class="select">
+                <li>%%%%%%%</li>
+                <li>%%%%%%%</li>
+            </ul>
+        </div>
+    <script>
+        var aa1 = document.getElementsByClassName("select1")[0],
+            aa2 = document.getElementsByClassName("select2")[0],
+            aa3 = document.getElementsByClassName("select3")[0],
+            aa4 = document.getElementsByClassName("select4")[0],
+            aa5 = document.getElementsByClassName("select5")[0],
+            bb1 = document.querySelectorAll(".select1 ul")[0],
+            bb2 = document.querySelectorAll(".select2 ul")[0],
+            bb3 = document.querySelectorAll(".select3 ul")[0],
+            bb4 = document.querySelectorAll(".select4 ul")[0],
+            bb5 = document.querySelectorAll(".select5 ul")[0],
+            ee = document.getElementsByTagName("ul"),
+                console.log(bb1.className.valueOf());
+            // aa1.onclick = function (){
+            //     // for (var i = 0; i < ee.length; i++) {
+            //     //     ee[i].className = "select";
+            //     // }
+            //     if(cc){
+            //         bb1.className = "show";
+            //         cc = false;
+            //     }else{
+            //         bb1.className = "select";
+            //         cc = true;
+            //     }
+            // }
+         function click () {
+             var thisClass = this.className.valueOf();
+             for (var i = 0; i < ee.length; i++) {
+                 ee[i].className = "select";
+             }
+             this.className = thisClass;
+             if (this.className.valueOf() == "select") {
+
+                     this.className = "show";
+                     cc = false;
+                 } else {
+                     this.className = "select";
+                     cc = true;
+                 }
+
+         }
+            aa1.onclick = click.bind(bb1);
+            aa2.onclick = click.bind(bb2);
+            aa3.onclick = click.bind(bb3);
+            aa4.onclick = click.bind(bb4);
+            aa5.onclick = click.bind(bb5);
+
+    </script>
+</body>
+</html>
