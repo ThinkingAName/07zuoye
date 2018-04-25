@@ -67,9 +67,9 @@
         }
         return str;
     };
+    color16 = roundColor16();
     for (i = 1;i <= 9;i++) {
         for (j = 1;j <= i;j++) {
-            color16 = roundColor16();
             var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
             mult1.innerHTML += str;
@@ -77,8 +77,9 @@
         mult1.innerHTML += '<br>';
     }
     for (i = 9;i >= 1;i--) {
+        color16 = roundColor16();
         for (j = 1;j <= i;j++) {
-            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
             mult2.innerHTML += str;
         };
@@ -86,7 +87,8 @@
     };
     for (i = 1;i <= 9;i++) {
         for (j = i;j >= 1;j--) {
-            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            color16 = roundColor16();
+            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
             mult3.innerHTML += str;
         };
@@ -94,7 +96,7 @@
     };
     for (i = 9;i >= 1;i--) {
         for (j = i;j >= 1;j--) {
-            var str = '<p>'+i+'*'+j+'='+i*j+'</p>';
+            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
             mult4.innerHTML += str;
         };
