@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aaa23323-d62c-4905-908d-baab036c0614" name="Default" comment="">
+    <list default="true" id="aaa23323-d62c-4905-908d-baab036c0614" name="Default" comment="作业2 新增onmouse时有背景颜色">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/onclickShow.html" afterPath="$PROJECT_DIR$/onclickShow.html" />
+      <change beforePath="$PROJECT_DIR$/task01.html" afterPath="$PROJECT_DIR$/task01.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,26 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task01.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="task01.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2525">
-              <caret line="101" column="29" lean-forward="false" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+            <state relative-caret-position="1275">
+              <caret line="113" column="114" lean-forward="false" selection-start-line="113" selection-start-column="114" selection-end-line="113" selection-end-column="114" />
               <folding>
-                <marker date="1524714096341" expanded="true" signature="2880:2897" ph="..." />
-                <marker date="1524714096341" expanded="true" signature="3185:3202" ph="..." />
-                <marker date="1524714096341" expanded="true" signature="3495:3512" ph="..." />
-                <marker date="1524714096341" expanded="true" signature="3767:3784" ph="..." />
+                <marker date="1524746650256" expanded="true" signature="2954:2971" ph="..." />
+                <marker date="1524746650256" expanded="true" signature="3285:3302" ph="..." />
+                <marker date="1524746650256" expanded="true" signature="3623:3640" ph="..." />
+                <marker date="1524746650256" expanded="true" signature="3895:3912" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="onclickShow.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="onclickShow.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onclickShow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="3350">
+              <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -56,8 +58,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task01.html" />
         <option value="$PROJECT_DIR$/onclickShow.html" />
+        <option value="$PROJECT_DIR$/task01.html" />
       </list>
     </option>
   </component>
@@ -121,7 +123,7 @@
       <updated>1524666347808</updated>
       <workItem from="1524666363894" duration="11085000" />
       <workItem from="1524714161862" duration="3956000" />
-      <workItem from="1524744840171" duration="104000" />
+      <workItem from="1524744840171" duration="1810000" />
     </task>
     <task id="LOCAL-00001" summary="作业2">
       <created>1524677433592</created>
@@ -137,11 +139,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524744936247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="作业2 新增onmouse时有背景颜色">
+      <created>1524744952884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524744952884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15145000" />
+    <option name="totallyTimeSpent" value="16851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="346" y="98" width="1346" height="688" extended-state="0" />
@@ -189,10 +198,10 @@
         <state relative-caret-position="2525">
           <caret line="101" column="29" lean-forward="false" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
           <folding>
-            <marker date="1524714096341" expanded="true" signature="2880:2897" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3185:3202" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3495:3512" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3767:3784" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="2954:2971" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3285:3302" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3623:3640" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3895:3912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -210,10 +219,10 @@
         <state relative-caret-position="2125">
           <caret line="85" column="29" lean-forward="false" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
           <folding>
-            <marker date="1524714096341" expanded="true" signature="2880:2897" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3185:3202" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3495:3512" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3767:3784" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="2954:2971" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3285:3302" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3623:3640" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3895:3912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -226,24 +235,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task01.html">
+    <entry file="file://$PROJECT_DIR$/onclickShow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2525">
-          <caret line="101" column="29" lean-forward="false" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
-          <folding>
-            <marker date="1524714096341" expanded="true" signature="2880:2897" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3185:3202" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3495:3512" ph="..." />
-            <marker date="1524714096341" expanded="true" signature="3767:3784" ph="..." />
-          </folding>
+        <state relative-caret-position="3350">
+          <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onclickShow.html">
+    <entry file="file://$PROJECT_DIR$/task01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1275">
+          <caret line="113" column="114" lean-forward="false" selection-start-line="113" selection-start-column="114" selection-end-line="113" selection-end-column="114" />
+          <folding>
+            <marker date="1524746650256" expanded="true" signature="2954:2971" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3285:3302" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3623:3640" ph="..." />
+            <marker date="1524746650256" expanded="true" signature="3895:3912" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

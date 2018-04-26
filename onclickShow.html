@@ -83,19 +83,14 @@
         </div>
     <script>
         var
-            aa = document.getElementsByTagName("div");
-        //     aa1 = document.getElementsByClassName("select1")[0],
-        //     aa2 = document.getElementsByClassName("select2")[0],
-        //     aa3 = document.getElementsByClassName("select3")[0],
-        //     aa4 = document.getElementsByClassName("select4")[0],
-        //     aa5 = document.getElementsByClassName("select5")[0],
-            bb1 = document.querySelectorAll(".select1 ul")[0],
+            aa = document.getElementsByTagName("div"), // 获取点击事件对象
+            bb1 = document.querySelectorAll(".select1 ul")[0], // 获取操作对象
             bb2 = document.querySelectorAll(".select2 ul")[0],
             bb3 = document.querySelectorAll(".select3 ul")[0],
             bb4 = document.querySelectorAll(".select4 ul")[0],
             bb5 = document.querySelectorAll(".select5 ul")[0],
-            ee = document.getElementsByTagName("ul");
-            ff = document.getElementsByTagName("li");
+            ee = document.getElementsByTagName("ul"); // 获取 操作对象
+            ff = document.getElementsByTagName("li"); // 获取 下拉菜单对象，用于设置背景颜色
                 console.log(bb1.className.valueOf());
             // aa1.onclick = function (){
             //     // for (var i = 0; i < ee.length; i++) {
@@ -109,37 +104,38 @@
             //         cc = true;
             //     }
             // }
+            // 实现点击展开二级菜单功能
          function click () {
-             var thisClass = this.className.valueOf();
-             for (var i = 0; i < ee.length; i++) {
-                 ee[i].className = "select";
+             var thisClass = this.className.valueOf(); // 先保存当前对象的 class值
+             for (var i = 0; i < ee.length; i++) { // 实现再次点击当前已经展开的的对象时收起
+                 ee[i].className = "select"; //  （给所有对象设置为收取状态）
              }
-             this.className = thisClass;
-             if (this.className.valueOf() == "select") {
+             this.className = thisClass; // 在将当前对象的当前状态赋值过来。
 
+                    // 判断当前对象是否展开，若否，则展开，若展开，则收起。
+             if (this.className.valueOf() == "select") {
                      this.className = "show";
-                     cc = false;
                  } else {
                      this.className = "select";
-                     cc = true;
                  }
-
          }
+            // 修改this指向为指定
             aa[0].onclick = click.bind(bb1);
             aa[1].onclick = click.bind(bb2);
             aa[2].onclick = click.bind(bb3);
             aa[3].onclick = click.bind(bb4);
             aa[4].onclick = click.bind(bb5);
+
+            // onmouse 时添加背景颜色
         for (i = 0; i < aa.length; i++) {
              aa[i].orgBgColor = getComputedStyle(aa[0]).backgroundColor.valueOf();
-
             //console.log(orgBgColor)
             aa[i].onmouseenter = function () {
                 this.style.backgroundColor = "red";
-            }
+            };
             aa[i].onmouseleave = function () {
                 this.style.backgroundColor = this.orgBgColor;
-            }
+            };
         }
         for (i = 0; i < ff.length; i++) {
             ff[i].orgBgColor = getComputedStyle(ff[i]).backgroundColor.valueOf();

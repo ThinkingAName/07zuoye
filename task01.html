@@ -54,7 +54,7 @@
         color16;
     var i,
         j;
-    function roundColor16() {
+    function roundColor16() {  // 生成十六进制的颜色随机数
         var str = '#',
             n;
         for (  n = 0; n < 6; n++ ){
@@ -67,7 +67,7 @@
         }
         return str;
     };
-    function roundColorRGB(A) {
+    function roundColorRGB(A) { // 生成rgb随机颜色，若传参则，返回rgba ，参数为a
         var  r = Math.floor(Math.random()*256),
              g = Math.floor(Math.random()*256),
              b = Math.floor(Math.random()*256),
@@ -78,12 +78,11 @@
             console.log(str);
         }else
             str = "rgb("+r+','+g+','+b+")";
-
         return str
 
     }
     // color16 = roundColor16();
-    color16 = roundColorRGB(1);
+    color16 = roundColorRGB(1); // 得到一个随机颜色，所有循环输出的内容颜色都相同
     for (i = 1;i <= 9;i++) {
         for (j = 1;j <= i;j++) {
             var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
@@ -93,7 +92,7 @@
         mult1.innerHTML += '<br>';
     }
     for (i = 9;i >= 1;i--) {
-        color16 = roundColor16();
+        color16 = roundColor16();  // 得到一个随机颜色，每行输出的内容颜色都相同
         for (j = 1;j <= i;j++) {
             var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
@@ -103,7 +102,7 @@
     };
     for (i = 1;i <= 9;i++) {
         for (j = i;j >= 1;j--) {
-            color16 = roundColor16();
+            color16 = roundColor16(); // 得到一个随机颜色，每个p标签输出的内容颜色都不同
             var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
             console.log(str);
             mult3.innerHTML += str;
@@ -112,7 +111,7 @@
     };
     for (i = 9;i >= 1;i--) {
         for (j = i;j >= 1;j--) {
-            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';
+            var str = '<p style = "background-color:'+color16+'">'+i+'*'+j+'='+i*j+'</p>';  // 拿到上一个循环结束时的颜色，整个都一样
             console.log(str);
             mult4.innerHTML += str;
         };
