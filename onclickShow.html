@@ -82,17 +82,20 @@
             </ul>
         </div>
     <script>
-        var aa1 = document.getElementsByClassName("select1")[0],
-            aa2 = document.getElementsByClassName("select2")[0],
-            aa3 = document.getElementsByClassName("select3")[0],
-            aa4 = document.getElementsByClassName("select4")[0],
-            aa5 = document.getElementsByClassName("select5")[0],
+        var
+            aa = document.getElementsByTagName("div");
+        //     aa1 = document.getElementsByClassName("select1")[0],
+        //     aa2 = document.getElementsByClassName("select2")[0],
+        //     aa3 = document.getElementsByClassName("select3")[0],
+        //     aa4 = document.getElementsByClassName("select4")[0],
+        //     aa5 = document.getElementsByClassName("select5")[0],
             bb1 = document.querySelectorAll(".select1 ul")[0],
             bb2 = document.querySelectorAll(".select2 ul")[0],
             bb3 = document.querySelectorAll(".select3 ul")[0],
             bb4 = document.querySelectorAll(".select4 ul")[0],
             bb5 = document.querySelectorAll(".select5 ul")[0],
-            ee = document.getElementsByTagName("ul"),
+            ee = document.getElementsByTagName("ul");
+            ff = document.getElementsByTagName("li");
                 console.log(bb1.className.valueOf());
             // aa1.onclick = function (){
             //     // for (var i = 0; i < ee.length; i++) {
@@ -122,11 +125,36 @@
                  }
 
          }
-            aa1.onclick = click.bind(bb1);
-            aa2.onclick = click.bind(bb2);
-            aa3.onclick = click.bind(bb3);
-            aa4.onclick = click.bind(bb4);
-            aa5.onclick = click.bind(bb5);
+            aa[0].onclick = click.bind(bb1);
+            aa[1].onclick = click.bind(bb2);
+            aa[2].onclick = click.bind(bb3);
+            aa[3].onclick = click.bind(bb4);
+            aa[4].onclick = click.bind(bb5);
+        for (i = 0; i < aa.length; i++) {
+             aa[i].orgBgColor = getComputedStyle(aa[0]).backgroundColor.valueOf();
+
+            //console.log(orgBgColor)
+            aa[i].onmouseenter = function () {
+                this.style.backgroundColor = "red";
+            }
+            aa[i].onmouseleave = function () {
+                this.style.backgroundColor = this.orgBgColor;
+            }
+        }
+        for (i = 0; i < ff.length; i++) {
+            ff[i].orgBgColor = getComputedStyle(ff[i]).backgroundColor.valueOf();
+
+            //console.log(orgBgColor)
+            ff[i].onmouseenter = function () {
+                this.style.backgroundColor = "blue";
+            }
+            ff[i].onmouseleave = function () {
+                this.style.backgroundColor = this.orgBgColor;
+            }
+        }
+
+
+
 
     </script>
 </body>
